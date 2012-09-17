@@ -9,7 +9,7 @@ gem 'pg'
 gem "cancan"
 gem "exception_notification", :git => "git://github.com/rails/exception_notification.git", :require => "exception_notifier"
 gem "ancestry"
-
+gem 'will_paginate', '~> 3.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,6 +24,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'quiet_assets', :group => :development
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
