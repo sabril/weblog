@@ -16,7 +16,7 @@ gem 'will_paginate', '~> 3.0'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem "twitter-bootstrap-rails"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
@@ -25,6 +25,10 @@ end
 
 gem 'jquery-rails'
 gem 'quiet_assets', :group => :development
+gem "friendly_id"
+gem 'newrelic_rpm'
+gem "carrierwave"
+gem "mini_magick"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -40,3 +44,9 @@ gem 'quiet_assets', :group => :development
 
 # To use debugger
 # gem 'debugger'
+
+group :test do
+  gem "rspec-rails"
+  gem "capybara"
+  gem "factory_girl"
+end
