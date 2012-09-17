@@ -31,6 +31,11 @@ gem "carrierwave"
 gem "mini_magick"
 gem 'ransack'
 
+gem 'omniauth-github', :git => 'git://github.com/intridea/omniauth-github.git'
+gem 'omniauth-openid', :git => 'git://github.com/intridea/omniauth-openid.git'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
